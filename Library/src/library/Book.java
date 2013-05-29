@@ -23,7 +23,8 @@ public class Book {
 //        this.date = Date;
 //        this.ISBN = ISBN;
 //    }
-   
+    
+
     public void setAuthor(String Author)
         throws IllegalArgumentException {
          //isDigit(Author[0]);
@@ -31,7 +32,10 @@ public class Book {
            throw new IllegalArgumentException("Invalid Author");
         }
            this.author = Author;
-     
+    }
+    
+    public String getAuthor() throws IllegalStateException{
+        return this.author;
     }
     
     public void setPrice(double Price){
@@ -43,6 +47,10 @@ public class Book {
         this.price = Price;
     }
     
+    public double  getPrice() throws IllegalStateException{
+        return this.price;
+    }
+    
     public void setDate(String Date){
         if (Date == null) {
             throw new IllegalArgumentException("Invalid Date ");        
@@ -50,12 +58,22 @@ public class Book {
         this.date = Date;
     }
     
+    public String getDate() throws IllegalStateException{
+        
+        return this.date;
+    }
+    
+    
     public void setISBN(long ISBN){
         if (ISBN == 0) {
             throw new IllegalArgumentException("Ivalid ISBN it must be at leat 13 characers");
             
         }
         this.ISBN = ISBN;
+    }
+    
+    public long getISBN() throws IllegalStateException{
+        return this.ISBN;
     }
 
 }
