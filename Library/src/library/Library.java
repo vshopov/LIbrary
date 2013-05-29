@@ -25,10 +25,11 @@ public class Library {
        Scanner input = new Scanner (System.in);
        TestPrintClass print = new TestPrintClass();
        print.PrintMethod();
+       Menu(); 
        System.out.println("How many books you wanna enter");
        int numberOfBooks = input.nextInt();
          Book book = new Book();
-        Menu(); 
+       
         int choice = input.nextInt();
         
         switch(choice){
