@@ -71,7 +71,7 @@ public class TestLibrary {
              System.out.println("Complete ISBN");
             newBook.setNameOfBook("Name of Book");
              System.out.println("Complete");
-            newBook.setPrice(12.455555555555554);
+            newBook.setPrice(12.455555555555555555555555554);
             System.out.println("Complete price");
             
             newBook.printBookContent();
