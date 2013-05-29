@@ -50,16 +50,22 @@ public class TestLibrary {
          
         Book newBook = new Book();
         @Test
-        public void Test(){
+        public void TestBook(){
         
             newBook.setAuthor("asdasd");
+             System.out.println("Complete author ");
+            newBook.setNameOfBook("as4das45d4a5s54da54s4da45s4da54s@#$%^&(*&(4da54sd54a54sd");
+             System.out.println("Complete Name of book");
+             newBook.setDate("212112");
+              System.out.println("Complete Date");
+            newBook.setISBN(151515151);
+             System.out.println("Complete ISBN");
+            newBook.setNameOfBook("Name of Book");
+             System.out.println("Complete");
+            newBook.setPrice(12.455555555555554);
+            System.out.println("Complete price");
+            
+            
         }
-//       public void  newBook.setAuthor("asdasd");{}
-//       {
-//        newBook.setDate("212112");
-//        newBook.setISBN(151515151);
-//        newBook.setNameOfBook("Name of Book");
-//        newBook.setPrice(12.44);
-//        System.out.println("Complete");
-//       }
+        
 }
