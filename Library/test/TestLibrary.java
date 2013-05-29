@@ -65,7 +65,9 @@ public class TestLibrary {
             newBook.setPrice(12.455555555555554);
             System.out.println("Complete price");
             
-            
+            newBook.printBookContent();
+             System.out.println("Complete");
+             
         }
         
 }
