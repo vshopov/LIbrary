@@ -10,7 +10,7 @@ import java.lang.Character;
  * @author miroslav.metodiev
  */
 public class Book {
-    
+    private String nameOfBook;
     private String author;
     private double price;
     private String date;
@@ -25,6 +25,21 @@ public class Book {
 //    }
     
 
+    public void setNameOfBook(String NameOfBook) 
+    throws IllegalArgumentException{
+        if (NameOfBook == null) {
+            throw new IllegalArgumentException("Invalid Name");
+            
+        }
+        
+        this.nameOfBook = NameOfBook;
+    }
+    
+    public String getNameOfBook()throws IllegalStateException{
+        
+        return this.nameOfBook;
+    }
+    
     public void setAuthor(String Author)
         throws IllegalArgumentException {
          //isDigit(Author[0]);
@@ -74,6 +89,12 @@ public class Book {
     
     public long getISBN() throws IllegalStateException{
         return this.ISBN;
+    }
+    
+    public String printBookContent(){
+       
+        String test = this.author;
+        return this.date;
     }
 
 }
