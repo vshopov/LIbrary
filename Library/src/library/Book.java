@@ -4,17 +4,23 @@
  */
 package library;
 
+import java.lang.Long;
+import java.lang.Double;
 import java.lang.Character;
+import java.util.ArrayList;
+import java.util.Date;
 /**
  *
  * @author miroslav.metodiev
  */
 public class Book {
-    private String nameOfBook;
-    private String author;
-    private double price;
-    private String date;
-    private long ISBN;
+    
+    private ArrayList<String> nameOfBook = new ArrayList<String>();
+    private ArrayList<String> author = new ArrayList<String>();
+    private ArrayList<Double> price = new ArrayList<Double>();
+    private ArrayList<String> date = new ArrayList<String>();
+    private ArrayList<Long> ISBN = new ArrayList<Long>();
+   
     
 //    public Book (String Author, double Price, String Date, double ISBN){
 //    
@@ -32,13 +38,13 @@ public class Book {
             
         }
         
-        this.nameOfBook = NameOfBook;
+        this.nameOfBook.add(NameOfBook);
     }
     
-    public String getNameOfBook()throws IllegalStateException{
-        
-        return this.nameOfBook;
-    }
+//    public ArrayList<this.nameOfBook> getNameOfBook()throws IllegalStateException{
+//        
+//         return this.nameOfBook.
+//      }
     
     public void setAuthor(String Author)
         throws IllegalArgumentException {
@@ -46,12 +52,12 @@ public class Book {
         if (Author == null ) {
            throw new IllegalArgumentException("Invalid Author");
         }
-           this.author = Author;
+           this.author.add(Author);
     }
     
-    public String getAuthor() throws IllegalStateException{
-        return this.author;
-    }
+//    public String getAuthor() throws IllegalStateException{
+//        return this.author;
+//    }
     
     public void setPrice(double Price){
         if (Price ==0 ) {
@@ -59,42 +65,59 @@ public class Book {
             
         }
         
-        this.price = Price;
+            this.price.add(Price);
     }
     
-    public double  getPrice() throws IllegalStateException{
-        return this.price;
-    }
+//    public double  getPrice() throws IllegalStateException{
+//        return this.price;
+//    }
     
     public void setDate(String Date){
         if (Date == null) {
             throw new IllegalArgumentException("Invalid Date ");        
         }
-        this.date = Date;
+        this.date.add(Date);
     }
     
-    public String getDate() throws IllegalStateException{
-        
-        return this.date;
-    }
+//    public String getDate() throws IllegalStateException{ 
+//        return this.date;
+//    }
     
     
     public void setISBN(long ISBN){
         if (ISBN == 0) {
             throw new IllegalArgumentException("Ivalid ISBN it must be at leat 13 characers");
-            
         }
-        this.ISBN = ISBN;
+       this.ISBN.add(ISBN);
     }
     
-    public long getISBN() throws IllegalStateException{
-        return this.ISBN;
-    }
-    
-    public String printBookContent(){
+//    public long getISBN() throws IllegalStateException{
+//        return this.ISBN;
+//    }
+//    
+    public void printBookContent(){
        
-        String test = this.author;
-        return this.date;
+        for (String s : this.nameOfBook) {
+            System.out.println(s);
+        }
+        
+        for (String s : this.author) {
+            System.out.println(s);
+        }
+        
+        for (double s : this.price) {
+            System.out.println(s);
+        }
+        
+        
+        for (String s : this.date) {
+            System.out.println(s);
+        }
+        
+        
+         for (long s : this.ISBN) {
+            System.out.println(s);
+        }
     }
 
 }

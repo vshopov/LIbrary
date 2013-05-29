@@ -15,10 +15,11 @@ import java.util.Scanner;
  */
 public class File {
     
+    Book newBook = new Book();
     PrintStream fileWriter = null;
 //	   try {
 //		try {
-//			fileWriter = new PrintStream(book + ".txt","windows-1251");
+//			fileWriter = new PrintStream(newBook.getNameOfBook() + ".txt","windows-1251");
 //		} catch (UnsupportedEncodingException e) {
 //			e.printStackTrace();
 //		}
