@@ -17,6 +17,8 @@ public class Library {
         System.out.println(" 1. Enter book:");
         System.out.println(" 2. Search book:");
         System.out.println(" 3. Read book from file:");
+        System.out.println(" 4. Delete book from List");
+        System.out.println(" 5. Delete book from file");
         System.out.println(" Enter a choice");
     }
     
@@ -59,7 +61,12 @@ public class Library {
                      }
                     
                     break;
+                    
                 case 3 :break;
+                    
+                case 4 :break;
+                        
+                case 5 :break;
 
                 default : 
                     System.out.println("Incorrect choice:");
