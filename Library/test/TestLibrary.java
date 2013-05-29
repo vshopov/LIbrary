@@ -12,6 +12,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import javax.swing.*; 
 import library.Book;
+import java.util.*;
 
 /**
  *
@@ -24,13 +25,9 @@ public class TestLibrary {
     
     @BeforeClass
     public static void setUpClass() {
-        Book newBook = new Book();
-        newBook.setAuthor("asdasd");
-        newBook.setDate("212112");
-        newBook.setISBN(151515151);
-        newBook.setNameOfBook("Name of Book");
-        newBook.setPrice(12.44);
         
+        
+      
     }
     
     @AfterClass
@@ -46,7 +43,23 @@ public class TestLibrary {
     }
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
-    //
+      
     // @Test
     // public void hello() {}
+    
+         
+        Book newBook = new Book();
+        @Test
+        public void Test(){
+        
+            newBook.setAuthor("asdasd");
+        }
+//       public void  newBook.setAuthor("asdasd");{}
+//       {
+//        newBook.setDate("212112");
+//        newBook.setISBN(151515151);
+//        newBook.setNameOfBook("Name of Book");
+//        newBook.setPrice(12.44);
+//        System.out.println("Complete");
+//       }
 }
