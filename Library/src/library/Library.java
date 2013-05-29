@@ -22,9 +22,13 @@ public class Library {
        
         Book book = new Book();
         System.out.println("Enter new book");
+        System.out.println("Enter new Author");
         book.setAuthor(input.next());
+        System.out.println("Enter new Date");
         book.setDate(input.next());
+        System.out.println("Enter price");
         book.setPrice(input.nextDouble());
+        System.out.println("Enter book ISBN");
         book.setISBN(input.nextLong());
         
         
