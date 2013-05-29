@@ -3,7 +3,6 @@
  * and open the template in the editor.
  */
 
-
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -47,6 +46,18 @@ public class TestLibrary {
     
          
         Book newBook = new Book();
+        
+        
+         @Test
+        public void TestSearch(){
+            newBook.SearchBook("");
+             newBook.SearchBook("2asda4sd4asd85a4sd5a4sd5a4sd5a4sd5as4d");
+            newBook.SearchBook("asdasd54as454ds");
+            newBook.SearchBook("33");
+            System.out.println("Complete Search " );
+        }
+        
+        
         @Test
         public void TestBook(){
         
@@ -68,4 +79,5 @@ public class TestLibrary {
              
         }
         
+       
 }
