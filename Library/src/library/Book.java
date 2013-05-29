@@ -83,7 +83,6 @@ public class Book {
 //        return this.date;
 //    }
     
-    
     public void setISBN(long ISBN){
         if (ISBN == 0) {
             throw new IllegalArgumentException("Ivalid ISBN it must be at leat 13 characers");
