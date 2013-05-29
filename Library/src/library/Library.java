@@ -11,36 +11,49 @@ import java.util.Scanner;
  */
 public class Library {
   
-    /**
-     * @param args the command line arguments
-     */
+    public static void Menu(){
+        
+        System.out.println("\t Menu:");
+        System.out.println(" 1. Enter book:");
+        System.out.println(" 2. Search book:");
+        System.out.println(" 3. Read book from file:");
+        System.out.println(" Enter a choice");
+    }
+    
     public static void main(String[] args) {
         
-        Scanner input = new Scanner (System.in);
+       Scanner input = new Scanner (System.in);
        TestPrintClass print = new TestPrintClass();
        print.PrintMethod();
        System.out.println("How many books you wanna enter");
        int numberOfBooks = input.nextInt();
-       
-        for (int i = 0; i < numberOfBooks; i++) {
+         Book book = new Book();
+        Menu(); 
+        int choice = input.nextInt();
+        
+        switch(choice){
             
-       
-        Book book = new Book();
-        System.out.println("Enter new book");
-        book.setNameOfBook(input.next());
-        System.out.println("Enter new Author");
-        book.setAuthor(input.next());
-        
-        System.out.println("Enter new Date");
-        book.setDate(input.next());
-        System.out.println("Enter price");
-        book.setPrice(input.nextDouble());
-        System.out.println("Enter book ISBN");
-        book.setISBN(input.nextLong());
-        
-        book.printBookContent();
-        book.SearchBook(input.next());
-        
-         } 
+                case 1:
+                for (int i = 0; i < numberOfBooks; i++) {
+                book.setNameOfBook(input.next());
+                book.setAuthor(input.next());
+                book.setDate(input.next());
+                book.setPrice(input.nextDouble());
+                book.setISBN(input.nextLong());
+                book.printBookContent();
+
+                break;
+                 } 
+
+                case 2:  book.SearchBook(input.next());
+                    break;
+                case 3 :break;
+
+                default : 
+                    System.out.println("Incorrect choice:");
+                    break;
+
     }
+    }
+
 }
