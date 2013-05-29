@@ -47,7 +47,17 @@ public class Library {
                 break;
                  } 
 
-                case 2:  book.SearchBook(input.next());
+                case 2: 
+                //isEmpty(book.setAuthor())
+                   
+                    if ( numberOfBooks == 0 ) {
+                       System.out.println("Error");
+                       break;
+                    } 
+                    else {
+                        book.SearchBook(input.next());
+                     }
+                    
                     break;
                 case 3 :break;
 
