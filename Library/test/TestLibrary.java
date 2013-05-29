@@ -13,7 +13,6 @@ import static org.junit.Assert.*;
 import javax.swing.*; 
 import library.Book;
 
-package library;
 /**
  *
  * @author miroslav.metodiev
@@ -27,6 +26,10 @@ public class TestLibrary {
     public static void setUpClass() {
         Book newBook = new Book();
         newBook.setAuthor("asdasd");
+        newBook.setDate("212112");
+        newBook.setISBN(151515151);
+        newBook.setNameOfBook("Name of Book");
+        newBook.setPrice(12.44);
         
     }
     
