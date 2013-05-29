@@ -39,6 +39,8 @@ public class Library {
         book.setISBN(input.nextLong());
         
         book.printBookContent();
+        book.SearchBook(input.next());
+        
          } 
     }
 }

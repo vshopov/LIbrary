@@ -119,5 +119,24 @@ public class Book {
             System.out.println(s);
         }
     }
+    
+    public String SearchBook(String search){
+         String returnStr = null;
+        for (String s : this.nameOfBook) {
+           
+            System.out.println(s);
+            if (s.equals(search)) {
+                System.out.println("Searched book is find ");
+                returnStr = s;
+            }
+            
+            else 
+            {
+                returnStr = "Not Fount Book";
+            }
+        }
+        
+        return returnStr;
+    }
 
 }
