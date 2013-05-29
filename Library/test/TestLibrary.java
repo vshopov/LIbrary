@@ -50,6 +50,7 @@ public class TestLibrary {
         
          @Test
         public void TestSearch(){
+             library.Library.Menu();
             newBook.SearchBook("");
              newBook.SearchBook("2asda4sd4asd85a4sd5a4sd5a4sd5a4sd5as4d");
             newBook.SearchBook("asdasd54as454ds");
