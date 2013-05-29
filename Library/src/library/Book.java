@@ -12,16 +12,33 @@ public class Book {
     private String author;
     private double price;
     private String date;
-    private double ISBN;
+    private long ISBN;
     
-    public Book (String Author, double Price, String Date, double ISBN){
+//    public Book (String Author, double Price, String Date, double ISBN){
+//    
+//        this.author = Author;
+//        this.price = Price;
+//        this.date = Date;
+//        this.ISBN = ISBN;
+//    }
     
+
+  
+    public void setAuthor(String Author){
         this.author = Author;
+    }
+    
+    public void setPrice(double Price){
         this.price = Price;
+    }
+    
+    public void setDate(String Date){
         this.date = Date;
+    }
+    
+    public void setISBN(long ISBN){
         this.ISBN = ISBN;
     }
     
     
-  
 }
