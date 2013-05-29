@@ -10,7 +10,10 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import javax.swing.*; 
+import library.Book;
 
+package library;
 /**
  *
  * @author miroslav.metodiev
@@ -22,7 +25,8 @@ public class TestLibrary {
     
     @BeforeClass
     public static void setUpClass() {
-        //Book newBook = new Book();
+        Book newBook = new Book();
+        newBook.setAuthor("asdasd");
         
     }
     
