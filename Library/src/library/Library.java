@@ -26,11 +26,12 @@ public class Library {
        TestPrintClass print = new TestPrintClass();
        print.PrintMethod();
        Menu(); 
+       int choice = input.nextInt();
        System.out.println("How many books you wanna enter");
        int numberOfBooks = input.nextInt();
          Book book = new Book();
        
-        int choice = input.nextInt();
+       
         
         switch(choice){
             
