@@ -31,8 +31,5 @@ public class Library {
         System.out.println("Enter book ISBN");
         book.setISBN(input.nextLong());
         
-        
-       
-       
     }
 }
