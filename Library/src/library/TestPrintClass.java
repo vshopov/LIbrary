@@ -8,7 +8,7 @@ package library;
  *
  * @author miroslav.metodiev
  */
-public class TestPrintClass {
+public class TestPrintClass extends Library{
     
     //test print method
     public void PrintMethod(){
@@ -17,4 +17,9 @@ public class TestPrintClass {
         
     }
     
+    public void TestTime(){
+        while(true){
+            System.out.println("Infinity");
+        }
+    }
 }

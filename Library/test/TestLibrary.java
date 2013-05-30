@@ -12,6 +12,7 @@ import static org.junit.Assert.*;
 import javax.swing.*; 
 import library.Book;
 import java.util.*;
+import library.TestPrintClass;
 
 /**
  *
@@ -78,6 +79,12 @@ public class TestLibrary {
             newBook.printBookContent();
              System.out.println("Complete");
              
+        }
+        
+        @Test
+        public void Times(){
+            //  library.TestPrintClass.
+    
         }
         
        
