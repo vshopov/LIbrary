@@ -31,14 +31,14 @@ public class Library {
        int choice = input.nextInt();
        System.out.println("How many books you wanna enter");
        int numberOfBooks = input.nextInt();
-         Book book = new Book();
+       Book book = new Book();
        long c = 0;
-       while(c < 1000000000 *1000000000){
+       
+       while(c < 1000000000 * 1000000000){
            
            c++;
            c=c--;
-           c++;
-        
+           c++; 
        }
         
         switch(choice){
